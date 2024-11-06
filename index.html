@@ -83,8 +83,8 @@
                 // Step 3 contour generator
 
                 const colors = d3.scaleLinear()
-                    .domain([minThreshold,maxThreshold,(maxThreshold - minThreshold)/binCount])
-                    .range(["#0d1a50", "#3e5eba", "#2b83ba", "#abdda4", "#ffffbf", "#FF0000", "#d7191c"])
+                    .domain(d3.range(minValue,maxValue,(maxValue - minValue)/binCount))
+                    .range(["#0d1a50", "#3e5eba", "#2b83ba", "#abdda4", "#ffffbf", "#fdae61", "#d7191c"])
                     .interpolate(d3.interpolateHcl);
 
 
